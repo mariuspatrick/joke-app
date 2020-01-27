@@ -9,13 +9,13 @@ Simple front-end app using a Random Joke API <https://github.com/15Dkatz/officia
 
 Features to be added:
 
-- [0] Add an admin page, where you can add jokes to your database
-- [0] Make a way to share a joke on social media
+- [ ] Add an admin page, where you can add jokes to your database
+- [ ] Make a way to share a joke on social media
 
 ## How to install:
 
 1. Make sure you have nodejs version 12.x installed on your machine
 2. Make sure you have postgresql version 12.x installed on your machine
 3. After fetching from github :
-   1. Run <npm install> to install dependencies
-   1. Run app with <npm run start>
+   1. Run **npm install** to install dependencies
+   1. Run app with **npm run start**
