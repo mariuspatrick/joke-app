@@ -4,15 +4,14 @@ import superagent from "superagent";
 class Joke extends Component {
   state = {
     joke: null,
-    punchline: null,
-    timer: null
+    punchline: null
   };
   componentDidMount() {
     superagent
       .get(`https://official-joke-api.appspot.com/random_joke`)
       .then(res => {
         this.setState({ joke: res.body.setup });
-        this.state.timer = setTimeout(
+        setTimeout(
           () => this.setState({ punchline: res.body.punchline }),
           5000
         );

@@ -5,7 +5,7 @@ Simple front-end app using a Random Joke API <https://github.com/15Dkatz/officia
 ## App objectives:
 
 - [x] Show joke's setup
-- [x] After a few seconds prin the punchline
+- [x] After a few seconds print the punchline
 
 Features to be added:
 
