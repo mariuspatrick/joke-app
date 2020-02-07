@@ -6,15 +6,15 @@ class Joke extends Component {
     joke: null,
     punchline: null
   };
+
   componentDidMount() {
     superagent
-      .get(`https://official-joke-api.appspot.com/random_joke`)
+      .get(`https://official-joke-api.appspot.com/jokes/programming/random`)
       .then(res => {
-        this.setState({ joke: res.body.setup });
-        setTimeout(
-          () => this.setState({ punchline: res.body.punchline }),
-          5000
-        );
+        res.body.map(joke => {
+          this.setState({ joke: joke.setup });
+          setTimeout(() => this.setState({ punchline: joke.punchline }), 5000);
+        });
       })
       .catch(err => console.error(err));
   }

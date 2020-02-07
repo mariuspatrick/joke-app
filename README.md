@@ -16,6 +16,6 @@ Features to be added:
 
 1. Make sure you have nodejs version 12.x installed on your machine
 2. Make sure you have postgresql version 12.x installed on your machine
-3. After fetching from github :
+3. After cloning from github :
    1. Run **npm install** to install dependencies
    1. Run app with **npm run start**
